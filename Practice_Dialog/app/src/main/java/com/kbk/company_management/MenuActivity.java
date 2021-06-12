@@ -1,4 +1,4 @@
-package com.kbk.practice_dialog;
+package com.kbk.company_management;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,7 +15,8 @@ public class MenuActivity extends AppCompatActivity {
     Button btn_items;
     Button btn_setting;
     Button btn_backtologin;
-    Button btn_check;
+
+    MainActivity.myDBHelper myDbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,13 +29,6 @@ public class MenuActivity extends AppCompatActivity {
         ManageSales();
         ManageItems();
         Setting();
-
-        btn_check.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"출석체크되었습니다", Toast.LENGTH_SHORT).show();
-            }
-        });
 
         btn_backtologin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,7 +80,6 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     private void FindID() {
-        btn_check = (Button) findViewById(R.id.btn_check);
         btn_clients = (Button) findViewById(R.id.btn_client);
         btn_sales = (Button) findViewById(R.id.btn_sales);
         btn_items = (Button) findViewById(R.id.btn_items);

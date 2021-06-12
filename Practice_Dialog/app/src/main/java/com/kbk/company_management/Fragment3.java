@@ -1,4 +1,4 @@
-package com.kbk.practice_dialog;
+package com.kbk.company_management;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

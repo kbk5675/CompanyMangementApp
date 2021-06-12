@@ -1,4 +1,4 @@
-package com.kbk.practice_dialog;
+package com.kbk.company_management;
 
 public class Client {
     String name;
